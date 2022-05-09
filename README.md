@@ -32,6 +32,7 @@ export default function Download() {
     const downloadFile = () => {
        fileService.get_exe_file()
     }
+
     return (
         <div>
           <button className='button-download' onClick={downloadFile}>download</button>
