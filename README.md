@@ -28,19 +28,17 @@ export default new FileService
 
 # and in other page:
 
-import fileService from '../service/fileService';
 export default function Download() {
     const downloadFile = () => {
        fileService.get_exe_file()
     }
-
     return (
         <div>
           <button className='button-download' onClick={downloadFile}>download</button>
         </div>
     );
 }
-export default new FileService
+
 
 now you can use in this button , and this will download for you a file.
 
