@@ -9,8 +9,8 @@ CORS(app)
 @app.route("/download")
 async def get_exe_file():
     try:
-        return send_file("C:\\Users\\User\Desktop\Software and applications\Software for installation\\revosetup.exe",
-                         attachment_filename='revosetup.exe')
+        return send_file(r"C:\Users\User\my-proj\my-proj-0.0.1.vsix",
+                         attachment_filename='Quick-design.vsix')
 
     except Exception as e:
         return str(e)
